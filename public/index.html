@@ -131,7 +131,7 @@
         <%- job.name %>
       </td>
       <td>
-        <%- job.data.league || job.data.leagueRule  %>
+        <%- job.data.league || job.data.leagueRule  %> : <%- job.data.leagueJob%>
       </td>
       <td><% if (job.lastRunAt) { %><time datetime="<%- moment(job.lastRunAt).toISOString() %>"><%- moment(job.lastRunAt).fromNow() %></time><% } %></td>
       <td><% if (job.nextRunAt) { %><time datetime="<%- moment(job.nextRunAt).toISOString() %>"><%- moment(job.nextRunAt).fromNow() %></time><% } %></td>
